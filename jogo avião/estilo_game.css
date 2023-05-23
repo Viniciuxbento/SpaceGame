@@ -1,0 +1,82 @@
+body,html{
+    
+}
+
+body {
+    height: 100%;
+    background-image: url(imagens/ceu-estrelado.jpg);
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.estrelas_gif-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.estrelas_gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-image: url(imagens/estrelas.gif);
+    animation: mover-estrelas 10s linear infinite;
+    z-index: 1;
+}
+
+@keyframes mover-estrelas {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+#foguete {
+    position: absolute;
+    padding-left: 0px;
+    margin-left: 0px;
+    
+}
+
+.foguete_estilo {
+    width: 200px;
+    height: 200px;
+    transform: rotate(90deg);
+    padding: 0;
+}
+.div_cometa{
+    width: 200%;
+    height: 100%;
+    animation: mover-cometas 5s linear infinite;
+    
+}
+.cometa_1{
+    height: 100px;
+    width: 100px;
+    padding-left: px;
+    z-index: 2;
+}
+
+.cometa_2{
+    height: 100px;
+    width: 100px;
+    padding-left: 00px;
+    z-index: 2;
+    
+}
+@keyframes mover-cometas {
+    0% {
+        transform: translateX(70%);
+    }
+    100% {
+        transform: translateX(-70%);
+    }
+}
